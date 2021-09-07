@@ -112,3 +112,19 @@ console.log(getPositives([1,2,-3,4,5,-6,7,8,-9,10]));
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+// Function to add up the numbers from a single numbers
+// Example, 4 would output 10. 1 + 2 + 3 + 4 = 10.
+const addUp = (n) => {
+  if (n < 0 || typeof(n) !== "number"){
+    return "Enter any positive number between 1 and 1000";
+  } else {
+    let a = 0;
+    let b = 1;
+
+    for (let i = 0; i<n; i++){
+      a += b
+      b += 1;
+    } return a;
+  }
+};
+console.log(addUp(10));
